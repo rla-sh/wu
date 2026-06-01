@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			body, h1, h2, p, ul{padding: 0; margin: 0;}
+
+		/*한글 폰트 부크크 고딕 700*/
+			@font-face {
+			    font-family: 'BookkGothic';
+			    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkGothic-Bd.woff2') format('woff2');
+			    font-weight: 700;
+			    font-display: swap;
+			}
+				body{
+					font-family: 'BookkGothic';
+					font-weight: 700;
+				}
+
+		/*section class*/
+			.section{
+				position: relative;
+				min-height: 100vh;
+			}
+			.section-01{
+				z-index: 1;
+			}
+			.section-02{}
+
+
+		/*div class*/
+			
+			.contents{
+				width: 1200px;
+				margin: auto;
+				position: relative;
+				padding: 200px 0px;
+			}
+			.contents-nav
+			.contents-footer{
+				width: 1200px;
+				margin: auto;
+				padding: 200px 0px;
+			}
+			.sand-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}	
+		.sand-wrap img {
+    position: absolute;
+}
+
+.sand-bg {
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+    z-index: 1;
+}
+
+
+.sand-text {
+    width: 100%;
+    height: 75vh;
+    object-fit: contain;
+    z-index: 2;
+    pointer-events: none;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+			.ab{
+				position: absolute;
+			}
+
+		/*Background*/
+			.bg-green{
+				background: #A2D959;
+			}
+			.bg-lightgreen{
+				background: #E4FFC1;
+			}
+			.bg-pink-01{
+				background: #FF60A1;
+			}
+			.bg-pink-02{
+				background: #FFB8D5;
+			}
+			.bg-pink-03{
+				background: #FF8BBA;
+			}
+			.bg-pink-04{
+				background: #FFE3EE;
+			}
+
+			.bg-sand-01{
+				background: url(sand-01.png) no-repeat center;
+				background-position: center;
+				background-attachment: fixed;
+				height: 95vh;
+			}
+
+			/*Text*/
+			.h1{
+				font-size: 5rem;
+			}
+			.h2{
+				font-size: 3rem;
+				line-height: 1.6;
+			}
+				/*Text Color*/
+				.text-pink{color: #FF60A1;}
+				.text-green{color: #1E3500;}
+
+
+			/*Image*/
+			/*.img-center{
+				width: 100%;
+				height: calc(100vh - 60px);
+				margin: 30px 0;
+				    
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.img-center img{
+				display: block;
+				width: auto;
+				height: 100%;
+			}*/
+
+			/*정렬*/
+			.center{
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+
+		</style>
+	</head>
+
+	<body>
+	<!-- 네비게이션 -->
+		<nav>
+		</nav>
+
+	<!--표지 -->
+		<section class="bg-green" style="width: 100%;
+    height: 100vh; position: sticky; top: 0; z-index: 1;">
+			<div class="sand-wrap">
+				<img src="sand-01.png" class="sand-bg" style="mix-blend-mode: darken;">
+				<img src="sand-01-text.png" class="sand-text">
+			</div>
+		</section>
+	<!-- 도입 -->
+		<section class="section bg-lightgreen" style="position: sticky; z-index: 2; min-height: 100vh; top: 0;">
+		
+			<div class="contents text-pink" style="height: 300vh;">
+
+					<img src="ahahah.png" class="ab" style="width: 400px; left: 250px; top: 50px;">
+
+					<img src="woman-01.png" class="ab" style="width: 700px; left: -200px; ">
+
+					<h1 class="ab h1" style="left: 520px; top: 390px; ">당신의</h1>
+
+					<h1 class="ab h1" style="left: 400px; top: 600px;transform: rotate(-20deg);">턱관절은</h1>
+
+					<h1 class="ab h1" style="left: 690px; top: 720px;">안녕하신가요?</h1>
+
+					<img src="woman-02.png" class="ab" style="width: 400px; left: 250px; top: 50px;">
+					<h2 class="h2 text-green" style="padding-right: 30px; padding-top: 30px;"> 인간의 평균 개구량,<br>즉 입을 벌릴 수 있는 크기는</h2>
+			</div>
+		</section>
+	<!-- 핑크1 -->
+		<section class="section bg-pink-04" style="position: sticky; z-index: 3; min-height: 100vh; top: 0;">
+			<div class="contents">
+				<h1 class="h1 img-center text-pink">테스트</h1>
+			</div>
+		</section>
+	<!-- 2 -->
+		<section class="section bg-pink-03" style="position: sticky; z-index: 4; min-height: 100vh; top: 0;">
+			<div class="contents">
+				<h1 class="h1 img-center text-pink">테스트</h1>
+			</div>
+		</section>
+	<!-- 3 -->
+		<section class="section bg-pink-02" style="position: sticky; z-index: 5; min-height: 100vh; top: 0;">
+			<div class="contents">
+				<h1 class="h1 img-center text-pink">테스트</h1>
+			</div>
+		</section>
+	<!-- 4 -->
+		<section class="section bg-pink-01" style="position: sticky; z-index: 6; min-height: 100vh; top: 0;">
+			<div class="contents">
+				<h1 class="h1 img-center text-pink">테스트</h1>
+			</div>
+		</section>
+		
+		<section class="section">
+			<footer class="bg-green contents-footer">
+				<div class="">
+					<img src="">
+					<h1>dfddd</h1>
+					<img src="">
+				</div>	
+			</footer>
+		</section>
+	</body>
+</html>
