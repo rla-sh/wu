@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<link rel="shortcut icon" type="image/x-icon" href="sandicon.png">
+		<title>뚱드위치</title>
 		<style>
 			body, h1, h2, p, ul{padding: 0; margin: 0;}
 
@@ -70,6 +72,8 @@
     transform: translate(-50%, -50%);
 }
 
+
+
 			.ab{
 				position: absolute;
 			}
@@ -101,40 +105,43 @@
 				height: 95vh;
 			}
 
-			/*Text*/
+		/*Text*/
 			.h1{
 				font-size: 5rem;
 			}
 			.h2{
-				font-size: 3rem;
+				font-size: 2.6rem;
 				line-height: 1.6;
 			}
-				/*Text Color*/
+			.p{
+				font-size: 1.8rem;
+				line-height: 1.6;
+			}
+			/*Text Color*/
 				.text-pink{color: #FF60A1;}
 				.text-green{color: #1E3500;}
+				.text-orange{color: #FF6B3A;}
+				.text-white{color: white;}
 
 
 			/*Image*/
-			/*.img-center{
-				width: 100%;
-				height: calc(100vh - 60px);
-				margin: 30px 0;
-				    
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-			.img-center img{
-				display: block;
-				width: auto;
-				height: 100%;
-			}*/
+	
 
 			/*정렬*/
-			.center{
+			/*.center{
 				text-align: center;
+				
+			}*/
+			.center{
+				display: block;
 				margin-left: auto;
 				margin-right: auto;
+			}
+			.left{
+				text-align: left;
+			}
+			.right{
+				text-align: right;
 			}
 
 
@@ -149,15 +156,22 @@
 	<!--표지 -->
 		<section class="bg-green" style="width: 100%;
     height: 100vh; position: sticky; top: 0; z-index: 1;">
-			<div class="sand-wrap">
+			<div class="sand-wrap" style="position: relative;">
+				
+				<img src="top-03.png" class="ab" style="left:20px; top:600px; width:400px;">
+			
+				<img src="bottom-03.png" class="ab" style="left:20px; top:770px; width:400px;">
+				<h2 class="ab" style="top:756px; text-align: center; padding-left:65px; padding-right:1321px;">점점 뚱뚱해지는 샌드위치에 대한 이야기</h2>
+
+
 				<img src="sand-01.png" class="sand-bg" style="mix-blend-mode: darken;">
 				<img src="sand-01-text.png" class="sand-text">
 			</div>
 		</section>
 	<!-- 도입 -->
-		<section class="section bg-lightgreen" style="position: sticky; z-index: 2; min-height: 100vh; top: 0;">
+		<section class="section bg-lightgreen" style="z-index: 3;">
 		
-			<div class="contents text-pink" style="height: 300vh;">
+			<div class="contents text-pink" style="height: 150vh;">
 
 					<img src="ahahah.png" class="ab" style="width: 400px; left: 250px; top: 50px;">
 
@@ -169,43 +183,311 @@
 
 					<h1 class="ab h1" style="left: 690px; top: 720px;">안녕하신가요?</h1>
 
-					<img src="woman-02.png" class="ab" style="width: 400px; left: 250px; top: 50px;">
-					<h2 class="h2 text-green" style="padding-right: 30px; padding-top: 30px;"> 인간의 평균 개구량,<br>즉 입을 벌릴 수 있는 크기는</h2>
+					<img src="woman-02.png" class="ab" style="width: 520px; left: 750px; top: 1250px;">
+
+					<h2 class="h2 text-green" style="padding-right: 30px; padding-top: 1100px;"> 인간의 평균 개구량,<br>즉 입을 벌릴 수 있는 크기는</h2>
+
+					<h2 class="h2 text-pink" style="padding-left: 159px; padding-top: 160px;"> 4.5cm</h2>
+
+					<img src="circle.png" class="ab" style="top: 1563px; left: 948px; mix-blend-mode: overlay;" >
+					<img src="circle.png" class="ab" style="top: 1563px; left: -10px; ">
+			</div>
+			<div class="contents">
+
+
+				<div style="position: relative; ">
+					<h2 class="ab h2 text-green center" 
+					style="left: 50px; top: 40px;">하지만 요즘 샌드들은...<br>평균 두께 <span class="text-pink">8cm</span>를 훌쩍 넘는 것들도 존재합니다.</h2>
+					<p class="ab p text-green center" style="padding-top: 50px; left: 50px; top: 40px;">이렇게 생긴 뚱뚱한 샌드위치는 우리에게 이미 익숙해졌죠.</p>
+					<img src="sand-04.png" class="center" style="width:800px;">
+				</div>
+
+				<div style="position: relative;">
+					<img src="man01.png" class="ab" style="top:-500px; left: 0px; width: 400px;">
+					<p class="text-orange p left ab" style="left:330px; bottom: 360px;">"이건... 샌드가 아니라..."</p>
+					<h2 class="text-orange h2 left ab" style="left: 700px; bottom:80px; transform: rotate(20deg);">WOW</p>
+				</div>
+
+				<div style="position: relative;">
+					<img src="man02.png" class="ab" style="top:10px; left: 430px;width: 400px;">
+					<p class="text-orange p right" style="padding-left: 50px;">"하마가 될 수 있는 새로운 도구!?"</p>
+				</div>
+				
+				<h1>그렇다면...</h1>
+				<img src="sand-03.png" class="center" style="width: 800px;">
+
+
+			</div>
+
+			<div class="contents text-pink">
+				
 			</div>
 		</section>
 	<!-- 핑크1 -->
-		<section class="section bg-pink-04" style="position: sticky; z-index: 3; min-height: 100vh; top: 0;">
+		<section class="section bg-pink-04" style="z-index: 4;">
+
 			<div class="contents">
-				<h1 class="h1 img-center text-pink">테스트</h1>
+
+				<h1 class="h1 text-pink center">
+					사실 최초의 샌드위치는<br>
+					지금과 정반대였습니다.
+				</h1>
+
+				<img src="sand-history.png"
+				class="center"
+				style="width:900px; padding-top:120px;">
+
+				<p class="p text-green center"
+				style="padding-top:120px;">
+					18세기 영국에서 탄생한 샌드위치는<br>
+					빠르게 식사를 해결하기 위한 음식이었습니다.
+				</p>
+
+				<p class="p text-green center"
+				style="padding-top:80px;">
+					한 손으로 들고,<br>
+					한 입에 베어 물고,<br>
+					흘리지 않고 먹는 것.
+				</p>
+
+				<h2 class="h2 text-pink center"
+				style="padding-top:140px;">
+					샌드위치의 시작은<br>
+					화려함이 아니라 편리함이었습니다.
+				</h2>
+
+				<div style="padding-top:180px;">
+					<p class="p text-green center">✓ 한 손으로 먹기 쉽다</p>
+					<p class="p text-green center" style="padding-top:30px;">✓ 이동하며 먹기 쉽다</p>
+					<p class="p text-green center" style="padding-top:30px;">✓ 내용물이 쏟아지지 않는다</p>
+					<p class="p text-green center" style="padding-top:30px;">✓ 빠르게 식사할 수 있다</p>
+				</div>
+
 			</div>
+
 		</section>
-	<!-- 2 -->
-		<section class="section bg-pink-03" style="position: sticky; z-index: 4; min-height: 100vh; top: 0;">
-			<div class="contents">
-				<h1 class="h1 img-center text-pink">테스트</h1>
+
+	<!-- 핑크2 -->
+		<section class="section bg-pink-02" style="z-index: 5;">
+
+			<div class="contents" style="height:1100px;">
+
+				<img src="sand-big.png"
+				class="ab"
+				style="width:650px; left:-50px; bottom:50px;">
+
+				<img src="sand-small.png"
+				class="ab"
+				style="width:320px; left:450px; top:0px;">
+
+				<h1 class="h2 text-green ab"
+				style="right:0; top:350px; line-height:1.8;">
+					어느새<br>
+					'한 끼 식사'였던 샌드위치는
+				</h1>
+
+				<h1 class="h2 text-green ab"
+				style="right:0; top:520px; line-height:1.8;">
+					한 손으로 들기 어려울 만큼<br>
+					커져 버렸습니다.
+				</h1>
+
+				<p class="p text-green ab"
+				style="right:0; bottom:60px;">
+					하지만 이것은 시작에 불과했습니다.
+				</p>
+
 			</div>
+
 		</section>
-	<!-- 3 -->
-		<section class="section bg-pink-02" style="position: sticky; z-index: 5; min-height: 100vh; top: 0;">
-			<div class="contents">
-				<h1 class="h1 img-center text-pink">테스트</h1>
+	<!-- 핑크3 -->
+		<section class="section bg-pink-03" style="z-index: 6;">
+
+			<div class="contents"
+			style="height:1100px;">
+
+				<img src="coffee.png"
+				class="ab"
+				style="width:250px; left:-100px; top:150px;">
+
+				<img src="fruit-sando.png"
+				class="ab"
+				style="width:650px; left:50px; bottom:0;">
+
+				<h1 class="h1 text-green ab"
+				style="right:0; top:150px;">
+					샌드위치는
+				</h1>
+
+				<h1 class="h1 text-green ab"
+				style="right:0; top:250px;">
+					맛뿐 아니라
+				</h1>
+
+				<h1 class="h1 text-green ab"
+				style="right:0; top:350px;">
+					'보여지는 방식'도
+				</h1>
+
+				<h1 class="h1 text-green ab"
+				style="right:0; top:450px;">
+					중요해졌습니다.
+				</h1>
+
+				<p class="p text-green ab"
+				style="right:0; top:650px;">
+					SNS가 일상이 된 시대.
+				</p>
+
+				<p class="p text-green ab"
+				style="right:0; top:730px;">
+					일본에서 시작된 후르츠 산도는<br>
+					그 변화를 가장 잘 보여줍니다.
+				</p>
+
+				<p class="p text-green ab"
+				style="right:0; top:900px;">
+					먹기 위해 만든 음식이<br>
+					보여주기 위한 음식으로도<br>
+					변하기 시작한 것입니다.
+				</p>
+
 			</div>
+
 		</section>
-	<!-- 4 -->
-		<section class="section bg-pink-01" style="position: sticky; z-index: 6; min-height: 100vh; top: 0;">
-			<div class="contents">
-				<h1 class="h1 img-center text-pink">테스트</h1>
+	<!-- 핑크4 -->
+		<section class="section bg-pink-01" style="z-index: 7;">
+
+			<div class="contents"
+			style="height:1200px;">
+
+				<img src="strawberry-bagel.png"
+				class="ab"
+				style="width:500px; left:0; top:100px;">
+
+				<h1 class="h2 text-white ab"
+				style="right:0; top:120px; line-height:1.5;">
+					그리고 샌드위치는<br>
+					점점 새로운 형태로<br>
+					진화합니다.
+				</h1>
+
+				<p class="p text-white ab"
+				style="right:0; top:430px;">
+					식빵을 넘어
+				</p>
+
+				<p class="p text-white ab"
+				style="right:0; top:520px;">
+					베이글,<br>
+					크루아상,<br>
+					브리오슈까지.
+				</p>
+
+				<p class="p text-white ab"
+				style="right:0; top:760px;">
+					재료도 점점 많아졌습니다.
+				</p>
+
+				<p class="p text-white ab"
+				style="right:0; top:850px;">
+					크림은 더 두꺼워지고,<br>
+					과일은 더 커지고,<br>
+					단면은 더 화려해졌습니다.
+				</p>
+
+				<h1 class="h2 text-white center"
+				style="padding-top:980px;">
+					그리고 마침내
+				</h1>
+
+				<h1 class="h1 text-white center"
+				style="padding-top:80px;">
+					샌드위치는<br>
+					'먹는 음식'을 넘어<br>
+					'구경하는 음식'이 되었습니다.
+				</h1>
+
 			</div>
+
 		</section>
 		
-		<section class="section">
-			<footer class="bg-green contents-footer">
-				<div class="">
-					<img src="">
-					<h1>dfddd</h1>
-					<img src="">
-				</div>	
-			</footer>
+	<!-- 결론? -->
+		<section class="section bg-green" style="z-index: 8;">
+
+			<div class="contents">
+
+				<h1 class="h1 text-pink center">
+					우리는 샌드위치를<br>
+					크게 만든 걸까요?
+				</h1>
+
+				<p class="p text-green center"
+				style="padding-top:180px;">
+					더 큰 음료.<br>
+					더 큰 디저트.<br>
+					더 많은 토핑.
+				</p>
+
+				<p class="p text-green center"
+				style="padding-top:150px;">
+					샌드위치의 변화는<br>
+					단순한 음식 트렌드가 아닙니다.
+				</p>
+
+				<p class="p text-green center"
+				style="padding-top:150px;">
+					더 눈에 띄는 것,<br>
+					더 화려한 것,<br>
+					더 특별한 것을 원하는
+				</p>
+
+				<p class="p text-green center"
+				style="padding-top:80px;">
+					시대의 취향이 반영된 결과입니다.
+				</p>
+
+				<h1 class="h1 text-pink center"
+				style="padding-top:220px;">
+					정말 좋은 샌드위치의 기준은
+				</h1>
+
+				<h1 class="h1 text-pink center"
+				style="padding-top:80px;">
+					높이일까요?
+				</h1>
+
+				<h1 class="h1 text-pink center"
+				style="padding-top:80px;">
+					아니면
+				</h1>
+
+				<h1 class="h1 text-pink center"
+				style="padding-top:80px;">
+					한 입의 만족감일까요?
+				</h1>
+
+			</div>
+
 		</section>
+	<!-- 폼폼푸터 -->
+		<section class="bg-green" style="z-index:9; padding:0; width: 100%; position: relative;">
+			<footer>
+				<div> 
+					<img src="top-02.png" style="width:100%; mix-blend-mode: darken;">
+
+					<div class="text-pink center" style="width:100%; padding-top: 0; margin: 0;">
+					<h2 style=" text-align: center; font-size:6.8rem; line-height: 0.9; ">이거 어디까지 두꺼워지는 거예요?</h2>
+					<h2 style="font-size:2rem; line-height: 1; text-align: center;">2026년도 1학기 서울과학기술대학교 웹퍼블리싱</h2>
+					<h2 style="font-size:2rem; line-height: 1; text-align: center;">rlatlgus@seoultech.ac.kr</h2>
+					<h2 style="font-size:2rem; line-height: 1; text-align: center;">2026&copy;김시현. 모든 권리 보유.</h2>
+					</div>
+					
+					<img src="bottom-02.png" style="width:100%; mix-blend-mode: darken;">
+				</div>
+			</footer>
+			
+		</section>
+		
 	</body>
 </html>
